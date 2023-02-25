@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="inpits">
+        <input
+          type="search"
+          placeholder="Search"
+          data-SearchBar
+          class="InputText"
+        />
+        <button class="searchIcon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <h1 class="Head nomargin">Weather in <span data-spanCity></span></h1>
+
+      <h1 class="degeesHead"><span data-spanDegrees>72</span>&deg;C</h1>
+
+      <p class="textInformation nomargin">
+        <img data-spanIcon src="" alt="" /> <span data-spanText>Clody</span>
+      </p>
+
+      <p class="HumidityHead nomargin">
+        Humidity: <span data-spanHumidity>60</span>%
+      </p>
+
+      <p class="windSpeedHead nomargin">
+        Wind speed: <span data-spanWindSpeed>20</span>km/h
+      </p>
+    </section>
+  </body>
+</html>
