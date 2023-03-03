@@ -52,12 +52,12 @@ function succes(position) {
 
 function problem() {
   wether.fechWether("Tokyo")
-}
+}*/
 
-btn.addEventListener("click", () => {
+btn.addEventListener("pointerdown", () => {
   const city = inputText.value
   wether.fechWether(city)
-})*/
+})
 
 function buildApp(data) {
   document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${wether.curentCity}')`
